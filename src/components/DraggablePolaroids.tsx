@@ -71,7 +71,7 @@ const polaroids: PolaroidItem[] = [
 
 export default function DraggablePolaroids() {
   return (
-    <section className="min-h-screen w-full bg-[#550000] relative overflow-hidden flex items-center justify-center p-0 m-0 border-t border-neutral-900">
+    <section className="min-h-screen w-full bg-[#550000] relative overflow-hidden flex items-center justify-center p-0 m-0 border-t border-neutral-900 select-none">
       {/* Subtle Grid Paper Background Pattern */}
       <div 
         className="absolute inset-0 opacity-20 pointer-events-none"
@@ -96,15 +96,17 @@ export default function DraggablePolaroids() {
           <motion.div
             key={item.id}
             drag
-            dragConstraints={{ left: -400, right: 400, top: -300, bottom: 300 }}
-            dragElastic={0.15}
-            whileHover={{ scale: 1.04 }}
-            whileDrag={{ scale: 1.08, zIndex: 100, cursor: 'grabbing' }}
+            dragConstraints={{ left: -500, right: 500, top: -400, bottom: 400 }}
+            dragElastic={0.1}
+            dragMomentum={true}
+            whileHover={{ scale: 1.04, transition: { duration: 0.15 } }}
+            whileTap={{ scale: 1.06, zIndex: 100, transition: { duration: 0.1 } }}
+            whileDrag={{ scale: 1.08, zIndex: 100, cursor: 'grabbing', transition: { duration: 0.1 } }}
             initial={{ x: item.initialX, y: item.initialY, rotate: item.rotate }}
             className="absolute cursor-grab active:cursor-grabbing group select-none z-20"
             style={{ touchAction: 'none' }}
           >
-            {/* Polaroid Frame (Smaller on mobile: ~30% reduction in width and photo height) */}
+            {/* Polaroid Frame */}
             <div className="bg-white p-2.5 pb-7 sm:p-3.5 sm:pb-10 rounded-lg shadow-2xl border border-neutral-200/80 w-[150px] sm:w-[240px] relative transition-shadow group-hover:shadow-[0_25px_50px_rgba(0,0,0,0.2)]">
               
               {/* Red Heart Attached on Top-Right Corner */}
@@ -113,17 +115,17 @@ export default function DraggablePolaroids() {
               </div>
 
               {/* Photo */}
-              <div className="w-full h-[160px] sm:h-[250px] overflow-hidden rounded bg-neutral-100">
+              <div className="w-full h-[160px] sm:h-[250px] overflow-hidden rounded bg-neutral-100 pointer-events-none">
                 <img
                   src={item.url}
                   alt={item.caption}
-                  className="w-full h-full object-cover pointer-events-none transition-transform duration-700 group-hover:scale-105"
+                  className="w-full h-full object-cover pointer-events-none transition-transform duration-500 group-hover:scale-105"
                   referrerPolicy="no-referrer"
                 />
               </div>
 
               {/* Caption */}
-              <div className="absolute bottom-1.5 sm:bottom-2.5 left-0 right-0 text-center px-1">
+              <div className="absolute bottom-1.5 sm:bottom-2.5 left-0 right-0 text-center px-1 pointer-events-none">
                 <span 
                   className="text-neutral-800 font-medium text-xs sm:text-lg tracking-wide truncate block"
                   style={{ fontFamily: "'Caveat', cursive, serif" }}
