@@ -1,0 +1,6 @@
+{
+  "name": "Midnight Surprise Countdown",
+  "description": "A romantic countdown webpage with Peach and Goma cats and surprise unlock.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
