@@ -18,12 +18,12 @@ export default function App() {
   });
 
   const albumImages = [
-    'https://i.ibb.co/BHZrYNzN/Whats-App-Image-2026-09-14-at-5-11-15-PM.jpg',
-    'https://i.ibb.co/hxnP1z8r/Whats-App-Image-2026-09-14-at-5-11-15-PM-1.jpg',
-    'https://i.ibb.co/PskxPWbN/Whats-App-Image-2026-09-14-at-5-07-55-PM.jpg',
-    'https://i.ibb.co/RGLDSjV3/Whats-App-Image-2026-09-14-at-5-07-55-PM-1.jpg',
-    'https://i.ibb.co/sJwFbP49/Whats-App-Image-2026-09-14-at-5-07-54-PM.jpg',
-    'https://i.ibb.co/KpPR7x8d/Whats-App-Image-2026-09-14-at-5-07-54-PM-1.jpg',
+    'https://i.ibb.co/F4vzYwxH/Whats-App-Image-2026-09-14-at-5-07-54-PM-1.webp',
+    'https://i.ibb.co/67qF88TJ/Whats-App-Image-2026-09-14-at-5-07-54-PM.webp',
+    'https://i.ibb.co/RTTNTnqD/Whats-App-Image-2026-09-14-at-5-07-55-PM-1.webp',
+    'https://i.ibb.co/JFdTXcgr/Whats-App-Image-2026-09-14-at-5-07-55-PM.webp',
+    'https://i.ibb.co/7NBWfk2b/Whats-App-Image-2026-09-14-at-5-11-15-PM-1.webp',
+    'https://i.ibb.co/qLHVV77Q/Whats-App-Image-2026-09-14-at-5-11-15-PM.webp',
   ];
   const [currentAlbumImageIndex, setCurrentAlbumImageIndex] = useState(0);
 

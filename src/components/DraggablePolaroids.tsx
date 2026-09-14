@@ -13,7 +13,7 @@ interface PolaroidItem {
 const polaroids: PolaroidItem[] = [
   {
     id: 1,
-    url: 'https://i.ibb.co/B5ddJdmJ/Chat-GPT-Image-Sep-14-2026-07-54-50-PM.png',
+    url: 'https://i.ibb.co/Rp1RYwtT/Chat-GPT-Image-Sep-14-2026-07-54-50-PM.webp',
     caption: 'Mera Baccha 🐥',
     initialX: -140,
     initialY: -100,
@@ -21,7 +21,7 @@ const polaroids: PolaroidItem[] = [
   },
   {
     id: 2,
-    url: 'https://i.ibb.co/N2pXtdf9/Chat-GPT-Image-Sep-14-2026-07-58-31-PM.png',
+    url: 'https://i.ibb.co/23JVs0sJ/Chat-GPT-Image-Sep-14-2026-07-58-31-PM.webp',
     caption: 'Meri Biwi 💋',
     initialX: 120,
     initialY: -110,
@@ -29,7 +29,7 @@ const polaroids: PolaroidItem[] = [
   },
   {
     id: 3,
-    url: 'https://i.ibb.co/bgkXhvPL/Chat-GPT-Image-Sep-14-2026-08-03-59-PM.png',
+    url: 'https://i.ibb.co/QWDJ54m/Chat-GPT-Image-Sep-14-2026-08-03-59-PM.webp',
     caption: 'Meri Jaan 🫀',
     initialX: -100,
     initialY: 120,
@@ -37,7 +37,7 @@ const polaroids: PolaroidItem[] = [
   },
   {
     id: 4,
-    url: 'https://i.ibb.co/Mxg50LwF/Chat-GPT-Image-Sep-14-2026-08-06-38-PM.png',
+    url: 'https://i.ibb.co/r27Q1t0m/Chat-GPT-Image-Sep-14-2026-08-06-38-PM.webp',
     caption: 'Mera Mota 🐼',
     initialX: 140,
     initialY: 100,
@@ -45,7 +45,7 @@ const polaroids: PolaroidItem[] = [
   },
   {
     id: 5,
-    url: 'https://i.ibb.co/KxYhBmFD/Chat-GPT-Image-Sep-14-2026-08-08-45-PM.png',
+    url: 'https://i.ibb.co/Wp2qwxMP/Chat-GPT-Image-Sep-14-2026-08-08-45-PM.webp',
     caption: 'Mera Cutie Patutie 🤭',
     initialX: -10,
     initialY: -20,
@@ -53,7 +53,7 @@ const polaroids: PolaroidItem[] = [
   },
   {
     id: 6,
-    url: 'https://i.ibb.co/twDZsByn/Chat-GPT-Image-Sep-14-2026-08-14-53-PM.png',
+    url: 'https://i.ibb.co/PsCVynHX/Chat-GPT-Image-Sep-14-2026-08-14-53-PM.webp',
     caption: 'Meri Dhanno 🙈',
     initialX: -220,
     initialY: 10,
@@ -61,7 +61,7 @@ const polaroids: PolaroidItem[] = [
   },
   {
     id: 7,
-    url: 'https://i.ibb.co/R40njvY0/Chat-GPT-Image-Sep-14-2026-08-21-15-PM.png',
+    url: 'https://i.ibb.co/whH7t1kx/Chat-GPT-Image-Sep-14-2026-08-21-15-PM.webp',
     caption: 'Mera Dudu 🤍',
     initialX: 60,
     initialY: 140,

@@ -1,13 +1,23 @@
 import React, { useState, useEffect, useRef } from 'react';
 
 const photos = [
-  'https://i.ibb.co/BHZrYNzN/Whats-App-Image-2026-09-14-at-5-11-15-PM.jpg',
-  'https://i.ibb.co/hxnP1z8r/Whats-App-Image-2026-09-14-at-5-11-15-PM-1.jpg',
-  'https://i.ibb.co/PskxPWbN/Whats-App-Image-2026-09-14-at-5-07-55-PM.jpg',
-  'https://i.ibb.co/RGLDSjV3/Whats-App-Image-2026-09-14-at-5-07-55-PM-1.jpg',
-  'https://i.ibb.co/sJwFbP49/Whats-App-Image-2026-09-14-at-5-07-54-PM.jpg',
-  'https://i.ibb.co/KpPR7x8d/Whats-App-Image-2026-09-14-at-5-07-54-PM-1.jpg',
-  'https://i.ibb.co/dCdqP2X/Whats-App-Image-2026-09-14-at-7-00-50-PM.jpg',
+  'https://i.ibb.co/0jWjvZMr/Whats-App-Image-2026-09-14-at-7-00-45-PM-1.webp',
+  'https://i.ibb.co/LdKsn5js/Whats-App-Image-2026-09-14-at-7-00-45-PM-2.webp',
+  'https://i.ibb.co/zTCxKYdC/Whats-App-Image-2026-09-14-at-7-00-45-PM.webp',
+  'https://i.ibb.co/fY2th9MS/Whats-App-Image-2026-09-14-at-7-00-46-PM-1.webp',
+  'https://i.ibb.co/vnw3Mmx/Whats-App-Image-2026-09-14-at-7-00-46-PM-2.webp',
+  'https://i.ibb.co/pHJ6fvh/Whats-App-Image-2026-09-14-at-7-00-46-PM.webp',
+  'https://i.ibb.co/675TnNhB/Whats-App-Image-2026-09-14-at-7-00-47-PM-1.webp',
+  'https://i.ibb.co/G39YqfjZ/Whats-App-Image-2026-09-14-at-7-00-48-PM-1.webp',
+  'https://i.ibb.co/TMKNwBxt/Whats-App-Image-2026-09-14-at-7-00-48-PM-2.webp',
+  'https://i.ibb.co/39QTnz09/Whats-App-Image-2026-09-14-at-7-00-48-PM.webp',
+  'https://i.ibb.co/bS1XymQ/Whats-App-Image-2026-09-14-at-7-00-49-PM-1.webp',
+  'https://i.ibb.co/LdWj44F0/Whats-App-Image-2026-09-14-at-7-00-49-PM-2.webp',
+  'https://i.ibb.co/HTgKZ2mG/Whats-App-Image-2026-09-14-at-7-00-49-PM-3.webp',
+  'https://i.ibb.co/C5n061ZJ/Whats-App-Image-2026-09-14-at-7-00-49-PM.webp',
+  'https://i.ibb.co/Kj6FsYJs/Whats-App-Image-2026-09-14-at-7-00-50-PM.webp',
+  'https://i.ibb.co/4ZBdxKCN/0a2b27a3-50c8-4c58-9a68-8264a9b9dcb8.webp',
+  'https://i.ibb.co/xKJ7dJWw/Whats-App-Image-2026-09-14-at-7-00-50-PM.webp',
 ];
 
 export default function BirthdayCarousel() {
@@ -47,7 +57,7 @@ export default function BirthdayCarousel() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  // Update positions without auto increment
+  // Update positions for manual scrolling
   const updatePositions = () => {
     const { isMobile, PITCH, TOTAL_WIDTH } = configRef.current;
     if (containerRef.current) {
@@ -129,7 +139,7 @@ export default function BirthdayCarousel() {
           <span style={{ color: '#7f0000', fontStyle: 'italic' }}>Mera Dudu, Meri Choti si Biwi</span>
         </h1>
         <p className="text-neutral-500 text-sm sm:text-base md:text-lg max-w-xl mx-auto font-normal">
-          Drag horizontally or scroll to browse our memories
+          Wishing you more happiness, laughter & love this year 💗
         </p>
       </div>
 
@@ -164,7 +174,7 @@ export default function BirthdayCarousel() {
                   <img
                     src={photo}
                     alt={`Memory ${index}`}
-                    className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 pointer-events-none"
+                    className="w-full h-full object-cover transition-all duration-700 pointer-events-none"
                     referrerPolicy="no-referrer"
                   />
                   <div className="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
