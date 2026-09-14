@@ -70,6 +70,18 @@ export default function App() {
   }, []);
 
   // Simulated music progress when playing
+  const audioRef = React.useRef<HTMLAudioElement | null>(null);
+
+  useEffect(() => {
+    if (audioRef.current) {
+      if (isPlaying) {
+        audioRef.current.play().catch((err) => console.log('Audio play error:', err));
+      } else {
+        audioRef.current.pause();
+      }
+    }
+  }, [isPlaying]);
+
   useEffect(() => {
     let interval: any;
     if (isPlaying) {
@@ -101,6 +113,7 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-black text-white relative selection:bg-orange-500 selection:text-white">
+      <audio ref={audioRef} src="https://advisory-sapphire-toe4kt6z.edgeone.dev/" loop preload="auto" />
       {/* Hero Section */}
       <div className="h-screen w-full flex items-center justify-center relative overflow-hidden p-6">
         {/* Background image fade in when burning or 28 */}
